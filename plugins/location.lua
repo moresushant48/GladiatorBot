@@ -53,8 +53,8 @@ end
 
 return {
   description = "Gets information about a location, maplink and overview", 
-  usage = "!loc (location): Gets information about a location, maplink and overview",
-  patterns = {"^!loc (.*)$"}, 
+  usage = "[#!/]loc (location): Gets information about a location, maplink and overview",
+  patterns = {"^[#!/]loc (.*)$"}, 
   run = run 
 }
 
