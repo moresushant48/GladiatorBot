@@ -8,7 +8,7 @@
 api_key  = nil
 
 base_api = "https://maps.googleapis.com/maps/api"
-dateFormat = "%A %d %B - %H:%M:%S"
+dateFormat = "%I : %M %p\n%A,  %B %d"
 
 -- Need the utc time for the google api
 function utctime()
@@ -85,7 +85,7 @@ function getformattedLocalTime(area)
   end
   local localTime, timeZoneId = get_time(lat,lng)
 
-  return "The local time in "..timeZoneId.." is: ".. os.date(dateFormat,localTime) 
+  return "> "..os.date(dateFormat,localTime)..'\n'..timeZoneId
 end
 
 function run(msg, matches)
