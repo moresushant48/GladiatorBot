@@ -232,39 +232,21 @@ function create_config( )
 	"whitelist",
 	"msg_checks",
 	"calculator",
-	"dogify",
 	"location",
 	"time",
 	"wiki",
 	"expand",
-	"hello"
+	"hello",
+	"weather",
+	"translate"
     },
-    sudo_users = {188827861,0,tonumber(our_id)},--Sudo users
+    sudo_users = {188827861,0},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
+    about_text = [[Gladiator
 An advanced administration bot based on TG-CLI written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
-
-Our website 
-http://teleseed.seedteam.org/
+Owner :
+Sushant More. (moresushant48)
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -605,10 +587,30 @@ Set chat visibility in pm !chats or !chatlist commands
 !res [username]
 Returns users name and id by username
 
-
 !log
 Returns group logs
 *Search for kick reasons using [#RTL|#spam|#lockmember]
+
+!time [area]
+Returns Current Time of You specific Location
+
+!loc [location]
+Gets information about a location, maplink and overview
+
+!wiki [term]
+Searches Wikipedia and send results
+
+!calc [expression]
+Calculate math expressions with mathjs API
+
+!expand [url]
+Expand a shorted URL to the original one
+
+!weather [city]
+Returns weather in that city
+
+!translate [text]
+Translate the text to English
 
 **You can use "#", "!", or "/" to begin all commands
 
