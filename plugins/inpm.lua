@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = "Welcome to SpoderBot!\n\nThis Bot is controlled by @no_one_fukin_cares to Control Various Groups\n\nSpoderBot Owner's Github: http://github.com/moresushant48\n\nMy Github Page :\nmoresushant48.github.io"
+		text = "Welcome...!\n\nThis Bot is controlled by Sushant More to Moderate Various Groups.\n\nGithub:\n http://github.com/moresushant48\n\nMy Github Page :\nmoresushant48.github.io"
      	return text
     end
 
